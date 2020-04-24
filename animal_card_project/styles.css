@@ -1,4 +1,4 @@
-.body{
+.card{
 	border: 1px solid grey;
 	margin-left: auto;
 	margin-right: auto;
@@ -10,11 +10,11 @@
 
 }
 
-#fact{
+.fact{
 	font-style: italic;
 }
 
-#name{
+.name{
 	font-size: 30px;
 }
 
