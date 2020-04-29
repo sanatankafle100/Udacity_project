@@ -36,7 +36,7 @@ def cave():
     if "sword" in items_in_bag:
         print_with_pause("You've been here before, and gotten all the good stuff. It's just an empty cave now.")
 
-    else: and "sword" in items_in_bag
+    else:
         items_in_bag.append("sword")
         print_with_pause("It turns out to be only a very small cave.")
         print_with_pause("Your eyes catches a glint of metal behind a rock.")
@@ -82,7 +82,11 @@ def main():
     while True:
         play_again = input("Would you like to play again?(y/n)")
         if play_again == 'y':
+            items_in_bag.remove("sword")
             print_with_pause("Excellent! Restarting the game..")
             intro()
             option()
         elif play_again == 'n':
+            print_with_pause("Thanks for playing. See you next time.")
+            break
+main()
